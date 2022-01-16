@@ -3,9 +3,10 @@ package logic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BubbleSort<T extends Comparable<T>> {
+public class BubbleSort<T extends Comparable<T>> implements Sort<T> {
 
     // 입력으로 List를 받아서 정렬된 List를 반환한다.
+    @Override
     public List<T> sort(List<T> input) {
         List<T> output = new ArrayList<>(input);
 
